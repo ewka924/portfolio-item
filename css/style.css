@@ -1,0 +1,98 @@
+.header{
+	width:100%;
+	height: auto;
+	text-align: center;
+	margin:5% auto;
+}
+
+.buttonsCol{
+	width:100%;
+	display:flex;
+	justify-content: center;
+	margin:5% auto;
+}
+
+input[type="button"]{
+	margin:auto 10px;
+	padding:10px;
+	background: #fff;
+	color:#000;
+	text-align: center;
+	border:0;
+	display:block;
+	box-shadow: 0px 1px 4px 0 rgba(29,33,36,0.08);
+	border-radius:6px;
+	transition: .4s;
+}
+
+input[type = "button"]:hover{
+	background-color: #4385F5;
+	color:#fff;
+}
+
+input[type = "button"]:focus{
+	outline:0;
+	background-color: #4385F5;
+	color:#fff;
+}
+
+.itemContainer{
+	padding:0;
+	transition:0.5s;
+
+}
+
+img{
+	max-width: 100%;
+}
+
+.content{
+	position:absolute;
+	bottom:0;
+}
+
+.category{
+	background-color: #4385F5;
+	padding:5px 10px;
+	border-radius:10px;
+	margin:10px 20px;
+	text-align: center;
+}
+
+.category a{
+	color:#fff;
+}
+.title{
+	margin-bottom:10px;
+	margin-left:20px;
+	font-weight: bold;
+	color:#fff;
+}
+
+@keyframes anim{
+	0%{
+		transform:scale(0);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+
+@keyframes anim2{
+	0%{
+		transform:scale(1);
+	}
+	100%{
+		transform:scale(0);
+	}
+}
+
+.toggleDisplayOn{
+	display: block;
+	animation: anim 1s;
+}
+
+.toggleDisplayOff{
+	
+	display:none;
+}
